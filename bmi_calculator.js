@@ -1,7 +1,7 @@
 let BMI = 0;
 let bmiInt = "";
 function calculateBMI(weightInKG, heightInMtr){
-    BMI = (weightInKG / (heightInMtr * heightInMtr)).toFixed(2)
+    BMI = weightInKG / (heightInMtr * heightInMtr)
     bmiInt = "";
     if (BMI < 18.5){
         bmiInt = "You're Underweight";
@@ -14,7 +14,7 @@ function calculateBMI(weightInKG, heightInMtr){
     } else{
         return console.log("incorrect value!");
     }
-    return console.log(`Basing on you're weight, ${weightInKG}Kg, and height, ${heightInMtr}m.\n${bmiInt} with a BMI of ${BMI}`)
+    return console.log(`Basing on you're weight, ${weightInKG}Kg, and height, ${heightInMtr}m.\n${bmiInt} with a BMI of ${BMI.toFixed(2)}`)
 }
 
 calculateBMI(85, 1.65)

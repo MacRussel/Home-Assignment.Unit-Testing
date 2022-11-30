@@ -4,7 +4,7 @@ console.log("\nStart Manual Testing...")
 
 const testBMI = () => {
     console.log("\nTesting BMI calculator function");
-    const expectedBMI = 31.22;
+    const expectedBMI = 31.22130394857668;
     const result = BMI;
     console.assert(
         result == expectedBMI,
